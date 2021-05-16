@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF6455AB2651B2380041460F /* Photo_CollageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6455AA2651B2380041460F /* Photo_CollageApp.swift */; };
+		EF6455AD2651B2380041460F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6455AC2651B2380041460F /* ContentView.swift */; };
+		EF6455AF2651B23A0041460F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF6455AE2651B23A0041460F /* Assets.xcassets */; };
+		EF6455B22651B23A0041460F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF6455B12651B23A0041460F /* Preview Assets.xcassets */; };
+		EF6455B42651B23A0041460F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6455B32651B23A0041460F /* Persistence.swift */; };
+		EF6455B72651B23A0041460F /* Photo_Collage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF6455B52651B23A0041460F /* Photo_Collage.xcdatamodeld */; };
+		EF6455C22651B23A0041460F /* Photo_CollageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6455C12651B23A0041460F /* Photo_CollageTests.swift */; };
+		EF6455CD2651B23B0041460F /* Photo_CollageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6455CC2651B23B0041460F /* Photo_CollageUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF6455BE2651B23A0041460F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF64559F2651B2380041460F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF6455A62651B2380041460F;
+			remoteInfo = "Photo Collage";
+		};
+		EF6455C92651B23B0041460F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF64559F2651B2380041460F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF6455A62651B2380041460F;
+			remoteInfo = "Photo Collage";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF6455A72651B2380041460F /* Photo Collage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Photo Collage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF6455AA2651B2380041460F /* Photo_CollageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo_CollageApp.swift; sourceTree = "<group>"; };
+		EF6455AC2651B2380041460F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EF6455AE2651B23A0041460F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF6455B12651B23A0041460F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EF6455B32651B23A0041460F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		EF6455B62651B23A0041460F /* Photo_Collage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Photo_Collage.xcdatamodel; sourceTree = "<group>"; };
+		EF6455B82651B23A0041460F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF6455BD2651B23A0041460F /* Photo CollageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Photo CollageTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF6455C12651B23A0041460F /* Photo_CollageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo_CollageTests.swift; sourceTree = "<group>"; };
+		EF6455C32651B23A0041460F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF6455C82651B23B0041460F /* Photo CollageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Photo CollageUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF6455CC2651B23B0041460F /* Photo_CollageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo_CollageUITests.swift; sourceTree = "<group>"; };
+		EF6455CE2651B23B0041460F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF6455A42651B2380041460F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF6455BA2651B23A0041460F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF6455C52651B23B0041460F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF64559E2651B2380041460F = {
+			isa = PBXGroup;
+			children = (
+				EF6455A92651B2380041460F /* Photo Collage */,
+				EF6455C02651B23A0041460F /* Photo CollageTests */,
+				EF6455CB2651B23B0041460F /* Photo CollageUITests */,
+				EF6455A82651B2380041460F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF6455A82651B2380041460F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF6455A72651B2380041460F /* Photo Collage.app */,
+				EF6455BD2651B23A0041460F /* Photo CollageTests.xctest */,
+				EF6455C82651B23B0041460F /* Photo CollageUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF6455A92651B2380041460F /* Photo Collage */ = {
+			isa = PBXGroup;
+			children = (
+				EF6455AA2651B2380041460F /* Photo_CollageApp.swift */,
+				EF6455AC2651B2380041460F /* ContentView.swift */,
+				EF6455AE2651B23A0041460F /* Assets.xcassets */,
+				EF6455B32651B23A0041460F /* Persistence.swift */,
+				EF6455B82651B23A0041460F /* Info.plist */,
+				EF6455B52651B23A0041460F /* Photo_Collage.xcdatamodeld */,
+				EF6455B02651B23A0041460F /* Preview Content */,
+			);
+			path = "Photo Collage";
+			sourceTree = "<group>";
+		};
+		EF6455B02651B23A0041460F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EF6455B12651B23A0041460F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EF6455C02651B23A0041460F /* Photo CollageTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF6455C12651B23A0041460F /* Photo_CollageTests.swift */,
+				EF6455C32651B23A0041460F /* Info.plist */,
+			);
+			path = "Photo CollageTests";
+			sourceTree = "<group>";
+		};
+		EF6455CB2651B23B0041460F /* Photo CollageUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EF6455CC2651B23B0041460F /* Photo_CollageUITests.swift */,
+				EF6455CE2651B23B0041460F /* Info.plist */,
+			);
+			path = "Photo CollageUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF6455A62651B2380041460F /* Photo Collage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF6455D12651B23B0041460F /* Build configuration list for PBXNativeTarget "Photo Collage" */;
+			buildPhases = (
+				EF6455A32651B2380041460F /* Sources */,
+				EF6455A42651B2380041460F /* Frameworks */,
+				EF6455A52651B2380041460F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Photo Collage";
+			productName = "Photo Collage";
+			productReference = EF6455A72651B2380041460F /* Photo Collage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF6455BC2651B23A0041460F /* Photo CollageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF6455D42651B23B0041460F /* Build configuration list for PBXNativeTarget "Photo CollageTests" */;
+			buildPhases = (
+				EF6455B92651B23A0041460F /* Sources */,
+				EF6455BA2651B23A0041460F /* Frameworks */,
+				EF6455BB2651B23A0041460F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF6455BF2651B23A0041460F /* PBXTargetDependency */,
+			);
+			name = "Photo CollageTests";
+			productName = "Photo CollageTests";
+			productReference = EF6455BD2651B23A0041460F /* Photo CollageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EF6455C72651B23B0041460F /* Photo CollageUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF6455D72651B23B0041460F /* Build configuration list for PBXNativeTarget "Photo CollageUITests" */;
+			buildPhases = (
+				EF6455C42651B23B0041460F /* Sources */,
+				EF6455C52651B23B0041460F /* Frameworks */,
+				EF6455C62651B23B0041460F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF6455CA2651B23B0041460F /* PBXTargetDependency */,
+			);
+			name = "Photo CollageUITests";
+			productName = "Photo CollageUITests";
+			productReference = EF6455C82651B23B0041460F /* Photo CollageUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF64559F2651B2380041460F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					EF6455A62651B2380041460F = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					EF6455BC2651B23A0041460F = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = EF6455A62651B2380041460F;
+					};
+					EF6455C72651B23B0041460F = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = EF6455A62651B2380041460F;
+					};
+				};
+			};
+			buildConfigurationList = EF6455A22651B2380041460F /* Build configuration list for PBXProject "Photo Collage" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF64559E2651B2380041460F;
+			productRefGroup = EF6455A82651B2380041460F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF6455A62651B2380041460F /* Photo Collage */,
+				EF6455BC2651B23A0041460F /* Photo CollageTests */,
+				EF6455C72651B23B0041460F /* Photo CollageUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF6455A52651B2380041460F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF6455B22651B23A0041460F /* Preview Assets.xcassets in Resources */,
+				EF6455AF2651B23A0041460F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF6455BB2651B23A0041460F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF6455C62651B23B0041460F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF6455A32651B2380041460F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF6455B42651B23A0041460F /* Persistence.swift in Sources */,
+				EF6455AD2651B2380041460F /* ContentView.swift in Sources */,
+				EF6455B72651B23A0041460F /* Photo_Collage.xcdatamodeld in Sources */,
+				EF6455AB2651B2380041460F /* Photo_CollageApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF6455B92651B23A0041460F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF6455C22651B23A0041460F /* Photo_CollageTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF6455C42651B23B0041460F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF6455CD2651B23B0041460F /* Photo_CollageUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF6455BF2651B23A0041460F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF6455A62651B2380041460F /* Photo Collage */;
+			targetProxy = EF6455BE2651B23A0041460F /* PBXContainerItemProxy */;
+		};
+		EF6455CA2651B23B0041460F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF6455A62651B2380041460F /* Photo Collage */;
+			targetProxy = EF6455C92651B23B0041460F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EF6455CF2651B23B0041460F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF6455D02651B23B0041460F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF6455D22651B23B0041460F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Photo Collage/Preview Content\"";
+				DEVELOPMENT_TEAM = QMVBBTV7HW;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Photo Collage/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Yevhenii-Huts.Photo-Collage";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF6455D32651B23B0041460F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Photo Collage/Preview Content\"";
+				DEVELOPMENT_TEAM = QMVBBTV7HW;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Photo Collage/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Yevhenii-Huts.Photo-Collage";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EF6455D52651B23B0041460F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QMVBBTV7HW;
+				INFOPLIST_FILE = "Photo CollageTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Yevhenii-Huts.Photo-CollageTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Photo Collage.app/Photo Collage";
+			};
+			name = Debug;
+		};
+		EF6455D62651B23B0041460F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QMVBBTV7HW;
+				INFOPLIST_FILE = "Photo CollageTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Yevhenii-Huts.Photo-CollageTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Photo Collage.app/Photo Collage";
+			};
+			name = Release;
+		};
+		EF6455D82651B23B0041460F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QMVBBTV7HW;
+				INFOPLIST_FILE = "Photo CollageUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Yevhenii-Huts.Photo-CollageUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Photo Collage";
+			};
+			name = Debug;
+		};
+		EF6455D92651B23B0041460F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QMVBBTV7HW;
+				INFOPLIST_FILE = "Photo CollageUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Yevhenii-Huts.Photo-CollageUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Photo Collage";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF6455A22651B2380041460F /* Build configuration list for PBXProject "Photo Collage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF6455CF2651B23B0041460F /* Debug */,
+				EF6455D02651B23B0041460F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF6455D12651B23B0041460F /* Build configuration list for PBXNativeTarget "Photo Collage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF6455D22651B23B0041460F /* Debug */,
+				EF6455D32651B23B0041460F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF6455D42651B23B0041460F /* Build configuration list for PBXNativeTarget "Photo CollageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF6455D52651B23B0041460F /* Debug */,
+				EF6455D62651B23B0041460F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF6455D72651B23B0041460F /* Build configuration list for PBXNativeTarget "Photo CollageUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF6455D82651B23B0041460F /* Debug */,
+				EF6455D92651B23B0041460F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EF6455B52651B23A0041460F /* Photo_Collage.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EF6455B62651B23A0041460F /* Photo_Collage.xcdatamodel */,
+			);
+			currentVersion = EF6455B62651B23A0041460F /* Photo_Collage.xcdatamodel */;
+			path = Photo_Collage.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EF64559F2651B2380041460F /* Project object */;
+}
