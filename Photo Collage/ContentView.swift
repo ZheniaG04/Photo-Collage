@@ -6,75 +6,110 @@
 //
 
 import SwiftUI
-import CoreData
+import Photos
 
 struct ContentView: View {
-    @Environment(\.managedObjectContext) private var viewContext
-
-    @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
-        animation: .default)
-    private var items: FetchedResults<Item>
-
     var body: some View {
-        List {
-            ForEach(items) { item in
-                Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-            }
-            .onDelete(perform: deleteItems)
-        }
-        .toolbar {
-            #if os(iOS)
-            EditButton()
-            #endif
-
-            Button(action: addItem) {
-                Label("Add Item", systemImage: "plus")
-            }
-        }
+        Home()
     }
+}
 
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
-        }
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
     }
+}
 
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            offsets.map { items[$0] }.forEach(viewContext.delete)
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+struct Home: View {
+    @State var selected : [UIImage] = []
+    @State var data : [Images] = []
+    @State var show = false
+    
+    var body: some View {
+        
+        ZStack{
+            Color.black.opacity(0.07).edgesIgnoringSafeArea(.all)
+            
+            VStack{
+                Button(action: {
+                    self.selected.removeAll()
+                    self.show.toggle()
+                }, label: {
+                    Text("Image Picker")
+                        .foregroundColor(.white)
+                        .padding(.vertical)
+                        .frame(width: UIScreen.main.bounds.width / 2)
+                })
+                .background(Color.red)
+                .clipShape(Capsule())
+            }
+            if self.show {
+                CustomPicker(selected: self.$selected, data: self.$data, show: self.$show)
             }
         }
     }
 }
 
-private let itemFormatter: DateFormatter = {
-    let formatter = DateFormatter()
-    formatter.dateStyle = .short
-    formatter.timeStyle = .medium
-    return formatter
-}()
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+struct CustomPicker: View {
+    @Binding var selected: [UIImage]
+    @Binding var data: [Images]
+    @State var grid: [Int] = []
+    @Binding var show: Bool
+    
+    var body: some View {
+        GeometryReader {_ in
+            VStack{
+                Spacer()
+            }
+            .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height / 1.5)
+            .background(Color.white)
+            .cornerRadius(12)
+        }
+        .background(Color.black.opacity(0.1).edgesIgnoringSafeArea(.all))
+        .onTapGesture {
+            self.show.toggle()
+        }
+        .onAppear {
+            PHPhotoLibrary.requestAuthorization { (status) in
+                if status == .authorized {
+                    self.getAllImages()
+                } else {
+                    print("Not authorized")
+                }
+            }
+        }
     }
+    
+    func getAllImages() {
+        let req = PHAsset.fetchAssets(with: .image, options: .none)
+        
+        DispatchQueue.global(qos: .background).async {
+            req.enumerateObjects { (asset, _, _) in
+                
+                let options = PHImageRequestOptions()
+                options.isSynchronous = true
+                
+                PHCachingImageManager.default().requestImage(for: asset, targetSize: .init(), contentMode: .default, options: options) { (image, _) in
+                    
+                    let dataItem = Images(image: image!, selected: false)
+                    data.append(dataItem)
+                }
+            }
+            
+            if req.count == self.data.count {
+                self.getGrid()
+            }
+        }
+    }
+    
+    func getGrid() {
+        for row in stride(from: 0, to: self.data.count, by: 3) {
+            self.grid.append(row)
+        }
+    }
+}
+
+struct Images {
+    var image: UIImage
+    var selected: Bool
 }

@@ -11,8 +11,6 @@
 		EF6455AD2651B2380041460F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6455AC2651B2380041460F /* ContentView.swift */; };
 		EF6455AF2651B23A0041460F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF6455AE2651B23A0041460F /* Assets.xcassets */; };
 		EF6455B22651B23A0041460F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF6455B12651B23A0041460F /* Preview Assets.xcassets */; };
-		EF6455B42651B23A0041460F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6455B32651B23A0041460F /* Persistence.swift */; };
-		EF6455B72651B23A0041460F /* Photo_Collage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF6455B52651B23A0041460F /* Photo_Collage.xcdatamodeld */; };
 		EF6455C22651B23A0041460F /* Photo_CollageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6455C12651B23A0041460F /* Photo_CollageTests.swift */; };
 		EF6455CD2651B23B0041460F /* Photo_CollageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6455CC2651B23B0041460F /* Photo_CollageUITests.swift */; };
 /* End PBXBuildFile section */
@@ -40,8 +38,6 @@
 		EF6455AC2651B2380041460F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EF6455AE2651B23A0041460F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF6455B12651B23A0041460F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		EF6455B32651B23A0041460F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		EF6455B62651B23A0041460F /* Photo_Collage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Photo_Collage.xcdatamodel; sourceTree = "<group>"; };
 		EF6455B82651B23A0041460F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF6455BD2651B23A0041460F /* Photo CollageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Photo CollageTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF6455C12651B23A0041460F /* Photo_CollageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo_CollageTests.swift; sourceTree = "<group>"; };
@@ -102,9 +98,7 @@
 				EF6455AA2651B2380041460F /* Photo_CollageApp.swift */,
 				EF6455AC2651B2380041460F /* ContentView.swift */,
 				EF6455AE2651B23A0041460F /* Assets.xcassets */,
-				EF6455B32651B23A0041460F /* Persistence.swift */,
 				EF6455B82651B23A0041460F /* Info.plist */,
-				EF6455B52651B23A0041460F /* Photo_Collage.xcdatamodeld */,
 				EF6455B02651B23A0041460F /* Preview Content */,
 			);
 			path = "Photo Collage";
@@ -265,9 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF6455B42651B23A0041460F /* Persistence.swift in Sources */,
 				EF6455AD2651B2380041460F /* ContentView.swift in Sources */,
-				EF6455B72651B23A0041460F /* Photo_Collage.xcdatamodeld in Sources */,
 				EF6455AB2651B2380041460F /* Photo_CollageApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -588,19 +580,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		EF6455B52651B23A0041460F /* Photo_Collage.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				EF6455B62651B23A0041460F /* Photo_Collage.xcdatamodel */,
-			);
-			currentVersion = EF6455B62651B23A0041460F /* Photo_Collage.xcdatamodel */;
-			path = Photo_Collage.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = EF64559F2651B2380041460F /* Project object */;
 }
